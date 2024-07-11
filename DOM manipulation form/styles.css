@@ -1,0 +1,25 @@
+body {
+    background-color: #f8f9fa;
+}
+
+#title {
+    font-size: 2.5em;
+    color: #333;
+}
+
+#description {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+}

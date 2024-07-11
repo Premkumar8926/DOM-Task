@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mt-5">
+                <h1 id="title">Calculator</h1>
+                <p id="description">A simple calculator that performs basic arithmetic operations.</p>
+                <div id="calculator" class="card mt-3">
+                    <div class="card-body">
+                        <input type="text" id="result" class="form-control mb-3" readonly>
+                        <div class="btn-group-vertical w-100">
+                            <div class="btn-group">
+                                <button id="memoryClear" class="btn btn-secondary">MC</button>
+                                <button id="memoryAdd" class="btn btn-secondary">M+</button>
+                                <button id="memorySubtract" class="btn btn-secondary">M-</button>
+                                <button id="clear" class="btn btn-danger">C</button>
+                            </div>
+                            <div class="btn-group">
+                                <button id="7" class="btn btn-secondary">7</button>
+                                <button id="8" class="btn btn-secondary">8</button>
+                                <button id="9" class="btn btn-secondary">9</button>
+                                <button id="divide" class="btn btn-secondary">/</button>
+                            </div>
+                            <div class="btn-group">
+                                <button id="4" class="btn btn-secondary">4</button>
+                                <button id="5" class="btn btn-secondary">5</button>
+                                <button id="6" class="btn btn-secondary">6</button>
+                                <button id="multiply" class="btn btn-secondary">*</button>
+                            </div>
+                            <div class="btn-group">
+                                <button id="1" class="btn btn-secondary">1</button>
+                                <button id="2" class="btn btn-secondary">2</button>
+                                <button id="3" class="btn btn-secondary">3</button>
+                                <button id="subtract" class="btn btn-secondary">-</button>
+                            </div>
+                            <div class="btn-group">
+                                <button id="0" class="btn btn-secondary">0</button>
+                                <button id="decimal" class="btn btn-secondary">.</button>
+                                <button id="equal" class="btn btn-success">=</button>
+                                <button id="add" class="btn btn-secondary">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>

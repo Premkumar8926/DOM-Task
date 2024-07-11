@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 id="title">User Information Form</h1>
+        <p id="description">Please fill out the form below and submit to see your information in the table.</p>
+        <form id="form">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" placeholder="Enter your address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pincode</label>
+                <input type="text" class="form-control" id="pincode" placeholder="Enter your pincode" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required>
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="food">Choice of Food (must choose at least 2)</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food1" value="Pizza">
+                    <label class="form-check-label" for="food1">Pizza</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food2" value="Burger">
+                    <label class="form-check-label" for="food2">Burger</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food3" value="Pasta">
+                    <label class="form-check-label" for="food3">Pasta</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food4" value="Salad">
+                    <label class="form-check-label" for="food4">Salad</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="food5" value="Sushi">
+                    <label class="form-check-label" for="food5">Sushi</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" placeholder="Enter your state" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="Enter your country" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
